@@ -7,22 +7,31 @@ public class DriverIT {
 		// Recursion Loop
 		// ctrl shift plus to zoom
 		// resume completely button f8 after pressing f6 to step over and f5 to step into
-		 System.out.println("Positive------------------------------");
 
 		Loop loop = new Loop();
-		/*
-		 * loop.countTo(1,3, e -> { System.out.println(e); });
-		 */
+		System.out.println("First method -----------------------");
+		loop.countTo(1,3, e -> { System.out.println(e); });
+		System.out.println("First method Alternate-----------------------");
+
+		loop.countTo(4,10,System.out::println);
+
+		 
 		
-		 loop .countTo(0, 20, 1, e ->{ System.out.println(e);
+		 System.out.println("Positive Second method------------------------------");
+
+		 loop .countTo(0, 10, 1, e ->{ System.out.println(e);
 		  
 		  });
 		 
-		 System.out.println("CountDown------------------------------");
-		loop.countTo(20, 0, -1, e -> {
+		 System.out.println("CountDown Second method------------------------------");
+		loop.countTo(10, 0, -1, e -> {
 			System.out.println(e);
 
 		});
+		
+		 System.out.println("CountDown Second method Alternate Way------------------------------");
+		loop.countTo(10,0, -1, System.out::println);
+
 
 	}
 
