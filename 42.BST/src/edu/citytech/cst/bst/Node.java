@@ -1,25 +1,24 @@
 package edu.citytech.cst.bst;
 
-class Node <T> {
 // just class to hide from the world
-	T parent;
-	Node<T> left, right; 
-	
-	
-	public Node(T parent, Node<T> left, Node<T> right) {
-		super();
-		this.parent = parent;
-		this.left = left;
-		this.right = right;
-	}
+	public class Node<T> {
+		protected T data;
+		protected Node<T> left, right;
 
-	public Node (T f) {
-		this.parent = f;
-	}
+		public Node(T data, Node<T> l, Node<T> r) {
+			left = l;
+			right = r;
+			this.data = data;
+		}
 
+		public Node(T data) {
+			this(data, null, null);
+		}
 
-	@Override
-	public String toString() {
-		return "N [L = " + left + " ,P = " + parent + " R = " + right + " ]";
+		@Override
+		public String toString() {
+			
+			return "Node [d:" + data + ", l:" + left + ", r:" + right + "]";
+		}
+
 	}
-}
