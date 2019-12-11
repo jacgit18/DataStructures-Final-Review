@@ -10,6 +10,12 @@ public class BST<T extends Comparable<T>> {
 	
 	private int size = 0;
 	
+	/**
+	 * Handles data going into node
+	 * @param node
+	 * @param newNode
+	 * @return
+	 */
 	private Node<T> newEntry(Node<T> node, T newNode) {
 		
 		if (node == null) {
