@@ -28,7 +28,7 @@ public class DriverABC {
 		System.out.println("Logrithmic Search Count " + searchCount);
 
 		// binary tree for comparing hashmap for specific value
-		//hash map is a dictionary
+		// hash map is a dictionary
 		// an array is imutable meaning you have wipe copy and create a new array to change array size
 		// so you would use an arraylist
 		
