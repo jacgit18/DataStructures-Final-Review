@@ -7,6 +7,7 @@ import edu.citytech.cst.model.Student;
 public class DriverBST {
 
 	public static void main(String[] args) {
+		// find out how to  display data
 
 //		BST<String> bst = new BST<>();
 //		BST<Float> bstf = new BST<>();
