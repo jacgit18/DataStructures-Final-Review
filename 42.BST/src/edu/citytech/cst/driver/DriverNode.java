@@ -1,4 +1,6 @@
-package edu.citytech.cst.bst;
+package edu.citytech.cst.driver;
+
+import edu.citytech.cst.bst.Node;
 
 public class DriverNode {
 
